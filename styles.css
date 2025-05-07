@@ -70,27 +70,30 @@ footer {
   padding: 15px 0;
 }
 
-.media-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
 }
 
-.media-gallery img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.media-gallery figure {
+.media-grid figure {
   text-align: center;
-  max-width: 600px;
+  margin: 0;
 }
 
-.media-gallery figcaption {
-  margin-top: 10px;
+.media-grid img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+.media-grid figcaption {
+  margin-top: 8px;
   font-style: italic;
   color: #555;
 }
